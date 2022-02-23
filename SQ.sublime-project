@@ -1,0 +1,71 @@
+{
+	"build_systems":
+	[
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh lib Debug"
+			],
+			"name": "Sq lib - Debug",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh lib Release"
+			],
+			"name": "Sq lib - Release",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh SQ Debug"
+			],
+			"name": "Sq All - Debug",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh SQ Release"
+			],
+			"name": "Sq All - Release",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh Clean"
+			],
+			"name": "Sq Clean",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		},
+		{
+			"cmd":
+			[
+				"./Scripts/build.sh Perf Debug"
+			],
+			"name": "Sq Performance Test",
+			"selector": "source.c++",
+			"shell": true,
+			"working_dir": "${project_path}"
+		}
+	],
+	"folders":
+	[
+		{
+			"path": "."
+		}
+	]
+}
